@@ -23,7 +23,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Symbiote.Core
+namespace BigFont
 {
     /// <summary>
     /// BigFont transforms strings into large, stylized characters.
@@ -1290,7 +1290,6 @@ namespace Symbiote.Core
         /// Generates a large string of characters corresponding to the input phrase.
         /// </summary>
         /// <remarks>
-        /// Supports uppercase characters A-Z, spaces, open and close parenthesis and question marks.
         /// Any character that doesn't exist in the alphabet will be replaced with a question mark.
         /// </remarks>
         /// <param name="phrase">The phrase to generate.</param>
