@@ -6,12 +6,13 @@ For fun, and because I needed something that would improve readability of big lo
 
 ## Usage
 
+### Default/Large Font
 ```c#
 foreach (string s in BigFont.GenerateStyled("Hello World"))
     Console.WriteLine(s);
 ```
 
-## Output
+### Output
 
 ```
 +----------------------------------- -   -----------------  - -   -             -------  -
@@ -24,6 +25,23 @@ foreach (string s in BigFont.GenerateStyled("Hello World"))
 |   ███    ███     ███    ███ ███▌    ▄ ███▌    ▄ ███    ███              ███ ▄█▄ ███ ███    ███   ███    ███ ███▌    ▄ ███   ▄███
 |   ███    █▀      ██████████ █████▄▄██ █████▄▄██  ▀██████▀                ▀███▀███▀   ▀██████▀    ███    ███ █████▄▄██ ████████▀
 +-------- - -      ------------------ -  -- - -   ------------ - - - ---------  - -----------------    -
+```
+
+### Medium Font
+```c#
+foreach (string s in BigFont.Generate("Hello World", BigFont.FontSize.Medium))
+    Console.WriteLine(s);
+```
+
+### Output
+
+```
+   █   █       ▄██████  █        █        ██████        █     █   ██████     ██████  █       ███████▄   ▄███▄
+  ██   ██     ██    █  ██       ██       ██    ██      ██     ██ ██    ██   ██   ██ ██       ██    ▀██ ▀█████▀
+ ▄██▄▄▄██▄▄  ▄██▄▄▄    ██       ██       ██    ██      ██     ██ ██    ██  ▄██▄▄▄█▀ ██       ██     ██  ▀███▀
+▀▀██▀▀▀██▀  ▀▀██▀▀▀    ██       ██       ██    ██      ██     ██ ██    ██ ▀████████ ██       ██     ██   ███
+  ██   ██     ██    █  ██▌    ▄ ██▌    ▄ ██    ██      ██ ▄█▄ ██ ██    ██   ██   ██ ██▌    ▄ ██    ▄██
+  ██   █      ████████ ████▄▄██ ████▄▄██  ██████        ███▀███   ██████    ██   ██ ████▄▄██ ███████▀    ██▀
 ```
 
 ## Notes
