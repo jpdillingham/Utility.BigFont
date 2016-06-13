@@ -46,7 +46,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Symbiote.Core
+namespace BigFont
 {
     /// <summary>
     /// BigFont transforms strings into large, stylized characters.
@@ -3451,7 +3451,7 @@ namespace Symbiote.Core
         /// <seealso cref="Generate(string, Font, FontSize)"/>
         public static string[] Generate(string phrase, FontSize size = FontSize.Large)
         {
-            return Generate(phrase, Font.Graffiti, size);
+            return Generate(phrase, Font.Block, size);
         }
 
         /// <summary>
