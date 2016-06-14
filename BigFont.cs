@@ -60,6 +60,7 @@ namespace BigFont
         /// </summary>
         public enum FontSize
         {
+            Default,
             Large = 8,
             Medium = 6,
             Small = 4
@@ -70,9 +71,24 @@ namespace BigFont
         /// </summary>
         public enum Font
         {
+            Default,
             Block,
             Graffiti
         }
+
+        #endregion
+
+        #region Variables
+
+        /// <summary>
+        /// The default font.
+        /// </summary>
+        private const Font defaultFont = Font.Block;
+
+        /// <summary>
+        /// The default font size.
+        /// </summary>
+        private const FontSize defaultFontSize = FontSize.Large;
 
         #endregion
 
@@ -3449,9 +3465,9 @@ namespace BigFont
         /// <param name="size">The size of the font to use.</param>
         /// <returns>A string array containing the generated output.</returns>
         /// <seealso cref="Generate(string, Font, FontSize)"/>
-        public static string[] Generate(string phrase, FontSize size = FontSize.Large)
+        public static string[] Generate(string phrase, FontSize size = FontSize.Default)
         {
-            return Generate(phrase, Font.Block, size);
+            return Generate(phrase, defaultFont, (size == FontSize.Default ? defaultFontSize : size));
         }
 
         /// <summary>
@@ -3464,10 +3480,16 @@ namespace BigFont
         /// <param name="font">The Font type to use.</param>
         /// <param name="size">The size of the font to use.</param>
         /// <returns>A string array containing the generated output.</returns>
-        public static string[] Generate(string phrase, Font font = Font.Block, FontSize size = FontSize.Large)
+        public static string[] Generate(string phrase, Font font = Font.Default, FontSize size = FontSize.Default)
         {
+            // substitute default font and size values with the configured default values
+            font = (font == Font.Default ? defaultFont : font);
+            size = (size == FontSize.Default ? defaultFontSize : size);
+
+            // create the result array of the proper size
             string[] r = new string[(int)size];
 
+            // populate the result array
             foreach (char c in phrase.ToUpper())
                 for (int i = 0; i < (int)size; i++)
                     r[i] += Alphabet[new Tuple<char, Font, FontSize>((Alphabet.ContainsKey(new Tuple<char, Font, FontSize>(c, font, size)) ? c : '?'), font, size)][i];
