@@ -1378,10 +1378,10 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('D', Font.Block, FontSize.Small), new string[]
             {
-                "█████▄  ",
+                "█████▄ ",
                 "██  ██ ",
                 "██  ██ ",
-                "█████▀  "
+                "█████▀ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('E', Font.Block, FontSize.Small), new string[]
