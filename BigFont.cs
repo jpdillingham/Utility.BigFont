@@ -1354,66 +1354,66 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('A', Font.Block, FontSize.Small), new string[]
             {
-                "▄█████▄ ",
-                "██   ██ ",
-                "███████ ",
-                "██   ██ "
+                "▄████▄ ",
+                "██  ██ ",
+                "██████ ",
+                "██  ██ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('B', Font.Block, FontSize.Small), new string[]
             {
-                "██▀▀▀█▄ ",
-                "██▄▄▄█▀ ",
-                "██   ██ ",
-                "██████▀ "
+                "██▀▀█▄ ",
+                "██▄▄█▀ ",
+                "██  ██ ",
+                "█████▀ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('C', Font.Block, FontSize.Small), new string[]
             {
-                "▄█████▄ ",
-                "██   ▀▀ ",
-                "██   ▄▄ ",
-                "▀█████▀ "
+                "▄████▄ ",
+                "██  ▀▀ ",
+                "██  ▄▄ ",
+                "▀████▀ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('D', Font.Block, FontSize.Small), new string[]
             {
                 "█████▄  ",
-                "██   ██ ",
-                "██   ██ ",
+                "██  ██ ",
+                "██  ██ ",
                 "█████▀  "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('E', Font.Block, FontSize.Small), new string[]
             {
-                "██████ ",
-                "██▄▄▄  ",
-                "██▀▀▀  ",
-                "██████ "
+                "█████ ",
+                "██▄▄  ",
+                "██▀▀  ",
+                "█████ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('F', Font.Block, FontSize.Small), new string[]
             {
-                "██████ ",
-                "██▄▄▄  ",
-                "██▀▀▀  ",
-                "██     "
+                "█████ ",
+                "██▄▄  ",
+                "██▀▀  ",
+                "██    "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('G', Font.Block, FontSize.Small), new string[]
             {
-                "▄█████▄ ",
-                "██   ▀▀ ",
-                "██  ▀██ ",
-                "▀█████▀ "
+                "▄████▄ ",
+                "██  ▀▀ ",
+                "██ ▀██ ",
+                "▀████▀ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('H', Font.Block, FontSize.Small), new string[]
             {
-                "██   ██ ",
-                "██▄▄▄██ ",
-                "██▀▀▀██ ",
-                "██   ██ "
+                "██  ██ ",
+                "██▄▄██ ",
+                "██▀▀██ ",
+                "██  ██ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('I', Font.Block, FontSize.Small), new string[]
@@ -1450,58 +1450,58 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('M', Font.Block, FontSize.Small), new string[]
             {
-                "███▄ ▄███ ",
-                "██ ▀█▀ ██ ",
-                "██     ██ ",
-                "██     ██ "
+                "███▄███ ",
+                "██ ▀ ██ ",
+                "██   ██ ",
+                "██   ██ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('N', Font.Block, FontSize.Small), new string[]
             {
-                "██   ██ ",
-                "███▄ ██ ",
-                "██▀█▄██ ",
-                "██  ▀██ "
+                "██  ██ ",
+                "███▄██ ",
+                "██▀███ ",
+                "██  ██ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('O', Font.Block, FontSize.Small), new string[]
             {
-                "▄█████▄ ",
-                "██   ██ ",
-                "██   ██ ",
-                "▀█████▀ "
+                "▄████▄ ",
+                "██  ██ ",
+                "██  ██ ",
+                "▀████▀ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('P', Font.Block, FontSize.Small), new string[]
             {
-                "██████▄ ",
-                "██   ██ ",
-                "██▀▀▀▀  ",
-                "██      "
+                "█████▄ ",
+                "██  ██ ",
+                "██▀▀▀  ",
+                "██     "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('Q', Font.Block, FontSize.Small), new string[]
             {
-                "▄█████▄  ",
-                "██   ██  ",
-                "██ ▀▄██  ",
-                "▀█████▀▄ "
+                "▄████▄  ",
+                "██  ██  ",
+                "██ ▄██  ",
+                "▀████▀▄ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('R', Font.Block, FontSize.Small), new string[]
             {
-                "█████▄ ",
-                "██  ██ ",
-                "████▀  ",
-                "██ ▀█▄ "
+                "████▄ ",
+                "██ ██ ",
+                "████▀ ",
+                "██▀█▄ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('S', Font.Block, FontSize.Small), new string[]
             {
-                "▄█████ ",
-                "██▄▄▄▄ ",
-                "▀▀▀▀██ ",
-                "█████▀ "
+                "▄████ ",
+                "██▄▄▄ ",
+                "▀▀▀██ ",
+                "████▀ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('T', Font.Block, FontSize.Small), new string[]
@@ -1514,58 +1514,58 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('U', Font.Block, FontSize.Small), new string[]
             {
-                "██  ██ ",
-                "██  ██ ",
-                "██  ██ ",
-                "▀████▀ "
+                "██ ██ ",
+                "██ ██ ",
+                "██ ██ ",
+                "▀███▀ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('V', Font.Block, FontSize.Small), new string[]
             {
-                "██  ██ ",
-                "██  ██ ",
-                "▐█  █▌ ",
-                " ▀██▀  "
+                "██ ██ ",
+                "██ ██ ",
+                "▐█ █▌ ",
+                " ▀█▀  "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('W', Font.Block, FontSize.Small), new string[]
             {
-                "██     ██ ",
-                "██     ██ ",
-                "██ ▄█▄ ██ ",
-                "███▀ ▀███ "
+                "██   ██ ",
+                "██   ██ ",
+                "██ ▄ ██ ",
+                "███▀███ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('X', Font.Block, FontSize.Small), new string[]
             {
-                "▀█▄   ▄█▀ ",
-                "  ▀█▄█▀   ",
-                "  ▄█▀█▄   ",
-                "▄█▀   ▀█▄ "
+                "▀█▄ ▄█▀ ",
+                " ▀█▄█▀  ",
+                " ▄█▀█▄  ",
+                "▄█▀ ▀█▄ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('Y', Font.Block, FontSize.Small), new string[]
             {
-                "▀█▄   ▄█▀ ",
-                "  ▀█▄█▀   ",
-                "   ▐█▌    ",
-                "   ▐█▌    "
+                "▀█▄ ▄█▀ ",
+                " ▀█▄█▀  ",
+                "  ▐█▌   ",
+                "  ▐█▌   "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('Z', Font.Block, FontSize.Small), new string[]
             {
-                "██████ ",
-                "   ▄█▀ ",
-                " ▄█▀   ",
-                "██████ "
+                "█████ ",
+                "  ▄█▀ ",
+                " ▄█▀  ",
+                "█████ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('1', Font.Block, FontSize.Small), new string[]
             {
-                "▄███   ",
-                "  ██   ",
-                "  ██   ",
-                "▄▄██▄▄ "
+                "▄███  ",
+                "  ██  ",
+                "  ██  ",
+                "▄▄██▄ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('2', Font.Block, FontSize.Small), new string[]
@@ -3482,7 +3482,7 @@ namespace BigFont
         /// <seealso cref="Generate(string, Font, FontSize)"/>
         public static string[] Generate(string phrase, FontSize size = FontSize.Default)
         {
-            return Generate(phrase, defaultFont, (size == FontSize.Default ? defaultFontSize : size));
+            return Generate(phrase, DefaultFont, (size == FontSize.Default ? DefaultFontSize : size));
         }
 
         /// <summary>
@@ -3498,8 +3498,8 @@ namespace BigFont
         public static string[] Generate(string phrase, Font font = Font.Default, FontSize size = FontSize.Default)
         {
             // substitute default font and size values with the configured default values
-            font = (font == Font.Default ? defaultFont : font);
-            size = (size == FontSize.Default ? defaultFontSize : size);
+            font = (font == Font.Default ? DefaultFont : font);
+            size = (size == FontSize.Default ? DefaultFontSize : size);
 
             // create the result array of the proper size
             string[] r = new string[(int)size];
