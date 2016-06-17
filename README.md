@@ -123,7 +123,7 @@ http://patorjk.com/software/taag/
 
 ## Configuration
 
-### Default Font and Font Size
+### Modify Default Font and Font Size
 
 Configure the default font and font size for the class by changing the two constant variables in the ```Variables``` region:
 
@@ -141,6 +141,15 @@ private const Font defaultFont = Font.Block;
 private const FontSize defaultFontSize = FontSize.Large;
 
 #endregion
+```
+
+### Programmatically Change Defaults
+
+Modify the ```DefaultFont``` and ```DefaultFontSize``` properties upon the first usage of the class to change the default values.  This will override defaults specified in the ```Variables``` section.
+
+```c#
+BigFont.DefaultFont = BigFont.Font.Block;
+BigFont.DefaultFontSize = BigFont.FontSize.Large;
 ```
 
 Acceptable values can be found in the ```Font``` and ```FontSize``` enumerations, but are:
