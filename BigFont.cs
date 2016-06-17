@@ -1,14 +1,14 @@
 /*
       █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀  ▀  ▀      ▀▀ 
       █
-      █   ▀█████████▄   ▄█     ▄██████▄     ▄████████  ▄██████▄  ███▄▄▄▄       ███         ▄████████     ▄████████     
-      █     ███    ███ ███    ███    ███   ███    ███ ███    ███ ███▀▀▀██▄ ▀█████████▄     ███    ███   ███    ███             
-      █     ███    ███ ███▌   ███    █▀    ███    █▀  ███    ███ ███   ███    ▀███▀▀██     ███    █▀    ███    █▀   
-      █    ▄███▄▄▄██▀  ███▌  ▄███         ▄███▄▄▄     ███    ███ ███   ███     ███   ▀     ███          ███         
-      █   ▀▀███▀▀▀██▄  ███▌ ▀▀███ ████▄  ▀▀███▀▀▀     ███    ███ ███   ███     ███         ███        ▀███████████  
-      █     ███    ██▄ ███    ███    ███   ███        ███    ███ ███   ███     ███         ███    █▄           ███  
-      █     ███    ███ ███    ███    ███   ███        ███    ███ ███   ███     ███     ▄▄▄ ███    ███    ▄█    ███  
-      █   ▄█████████▀  █▀     ████████▀    ███         ▀██████▀   ▀█   █▀     ▄████▀   ███ ████████▀   ▄████████▀   
+      █   ▀█████████▄   ▄█     ▄██████▄     ▄████████  ▄██████▄  ███▄▄▄▄       ███         
+      █     ███    ███ ███    ███    ███   ███    ███ ███    ███ ███▀▀▀██▄ ▀█████████▄                  
+      █     ███    ███ ███▌   ███    █▀    ███    █▀  ███    ███ ███   ███    ▀███▀▀██    ▄██████   ▄█████
+      █    ▄███▄▄▄██▀  ███▌  ▄███         ▄███▄▄▄     ███    ███ ███   ███     ███   ▀    ██    ██   ██  ▀   
+      █   ▀▀███▀▀▀██▄  ███▌ ▀▀███ ████▄  ▀▀███▀▀▀     ███    ███ ███   ███     ███        ██    ▀    ██
+      █     ███    ██▄ ███    ███    ███   ███        ███    ███ ███   ███     ███        ██    ▄  ▀███████ 
+      █     ███    ███ ███    ███    ███   ███        ███    ███ ███   ███     ███        ██    ██    ▄  ██
+      █   ▄█████████▀  █▀     ████████▀    ███         ▀██████▀   ▀█   █▀     ▄████▀   ██ ██████▀   ▄████▀
       █
  ▄ ▄▄ █ ▄▄▄▄▄▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄  ▄▄ ▄▄   ▄▄▄▄ ▄▄     ▄▄     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄ ▄ 
  █ ██ █ █████████  ████ ██████████████████████████████████████ ███████████████ ██  ██ ██   ████ ██     ██     ████████████████ █ █ 
@@ -81,18 +81,28 @@ namespace BigFont
         #region Variables
 
         /// <summary>
-        /// The default font.
+        /// The default font used to initialize the DefaultFont property.
         /// </summary>
         private const Font defaultFont = Font.Block;
 
         /// <summary>
-        /// The default font size.
+        /// The default font size used to initialize the DefaultFontSize property.
         /// </summary>
         private const FontSize defaultFontSize = FontSize.Large;
 
         #endregion
 
         #region Properties
+
+        /// <summary>
+        /// The default font.
+        /// </summary>
+        public static Font DefaultFont { get; set; }
+
+        /// <summary>
+        /// The default font size.
+        /// </summary>
+        public static FontSize DefaultFontSize { get; set; }
 
         /// <summary>
         /// The alphabet.
@@ -108,6 +118,11 @@ namespace BigFont
         /// </summary>
         static BigFont()
         {
+            // initialize the default properties
+            DefaultFont = defaultFont;
+            DefaultFontSize = defaultFontSize;
+
+            // create the "Alphabet"
             Alphabet = new Dictionary<Tuple<char, Font, FontSize>, string[]>();
 
             #region Block
@@ -405,26 +420,26 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('X', Font.Block, FontSize.Large), new string[]
             {
-                "▀██▄         ▄██▀ ",
-                "  ▀██▄     ▄██▀   ",
-                "    ▀██▄ ▄██▀     ",
-                "      ▀███▀       ",
-                "      ▄███▄       ",
-                "    ▄██▀ ▀██▄     ",
-                "  ▄██▀     ▀██▄   ",
-                "▄██▀         ▀██▄ "
+                "▀██▄       ▄██▀ ",
+                " ▀██▄     ▄██▀  ",
+                "   ▀██▄ ▄██▀    ",
+                "     ▀███▀      ",
+                "     ▄███▄      ",
+                "   ▄██▀ ▀██▄    ",
+                " ▄██▀     ▀██▄  ",
+                "▄██▀        ██▄ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('Y', Font.Block, FontSize.Large), new string[]
             {
-                "▀██▄         ▄██▀ ",
-                "  ▀██▄     ▄██▀   ",
-                "    ▀██▄ ▄██▀     ",
-                "      ▀███▀       ",
-                "       ███        ",
-                "       ███        ",
-                "       ███        ",
-                "       ███        "
+                "▀██▄       ▄██▀ ",
+                " ▀██▄     ▄██▀  ",
+                "   ▀██▄ ▄██▀    ",
+                "     ▀███▀      ",
+                "      ███       ",
+                "      ███       ",
+                "      ███       ",
+                "      ███       "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('Z', Font.Block, FontSize.Large), new string[]
@@ -804,7 +819,7 @@ namespace BigFont
                 "██▄▄▄█▀ ",
                 "██▀▀▀█▄ ",
                 "██   ██ ",
-                "██████▀  "
+                "██████▀ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('C', Font.Block, FontSize.Medium), new string[]
@@ -959,12 +974,12 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('R', Font.Block, FontSize.Medium), new string[]
             {
-                "█████▄ ",
-                "██  ██ ",
-                "██  ██ ",
-                "█████▀ ",
-                "██▀█▄  ",
-                "██ ▀██ "
+                "██████▄ ",
+                "██   ██ ",
+                "██   ██ ",
+                "██████▀ ",
+                "██▀██▄  ",
+                "██  ▀██ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('S', Font.Block, FontSize.Medium), new string[]
@@ -1019,22 +1034,22 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('X', Font.Block, FontSize.Medium), new string[]
             {
-                "▀██▄     ▄██▀ ",
-                "  ▀██▄ ▄██▀   ",
-                "    ▀███▀     ",
-                "    ▄███▄     ",
-                "  ▄██▀ ▀██▄   ",
-                "▄██▀     ▀██▄ "
+                "▀██▄   ▄██▀ ",
+                " ▀██▄ ▄██▀  ",
+                "   ▀███▀    ",
+                "   ▄███▄    ",
+                " ▄██▀ ▀██▄  ",
+                "▄██▀   ▀██▄ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('Y', Font.Block, FontSize.Medium), new string[]
             {
-                "▀██▄     ▄██▀ ",
-                "  ▀██▄ ▄██▀   ",
-                "    ▀███▀     ",
-                "     ▐█▌      ",
-                "     ▐█▌      ",
-                "     ▐█▌      "
+                "▀██▄   ▄██▀ ",
+                " ▀██▄ ▄██▀  ",
+                "   ▀███▀    ",
+                "    ▐█▌     ",
+                "    ▐█▌     ",
+                "    ▐█▌     "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('Z', Font.Block, FontSize.Medium), new string[]
@@ -1371,18 +1386,18 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('E', Font.Block, FontSize.Small), new string[]
             {
-                "█████ ",
-                "██▄▄  ",
-                "██▀▀  ",
-                "█████ "
+                "██████ ",
+                "██▄▄▄  ",
+                "██▀▀▀  ",
+                "██████ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('F', Font.Block, FontSize.Small), new string[]
             {
-                "█████ ",
-                "██▄▄  ",
-                "██▀▀  ",
-                "██    "
+                "██████ ",
+                "██▄▄▄  ",
+                "██▀▀▀  ",
+                "██     "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('G', Font.Block, FontSize.Small), new string[]
@@ -1395,10 +1410,10 @@ namespace BigFont
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('H', Font.Block, FontSize.Small), new string[]
             {
-                "██  ██ ",
-                "██▄▄██ ",
-                "██▀▀██ ",
-                "██  ██ "
+                "██   ██ ",
+                "██▄▄▄██ ",
+                "██▀▀▀██ ",
+                "██   ██ "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('I', Font.Block, FontSize.Small), new string[]
@@ -1484,7 +1499,7 @@ namespace BigFont
             Alphabet.Add(new Tuple<char, Font, FontSize>('S', Font.Block, FontSize.Small), new string[]
             {
                 "▄█████ ",
-                "██     ",
+                "██▄▄▄▄ ",
                 "▀▀▀▀██ ",
                 "█████▀ "
             });
