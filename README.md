@@ -1,18 +1,24 @@
 # BigFont
 A C# class for transforming strings into large, stylized characters.
 
-## Why?
+### Why?
 For fun, and because I needed something that would improve readability of big log files by adding something that would stick out when scrolling through them.
 
-## Usage
+### Methods
 
-### Default/Large Font
+#### Generate()
+
+Generates a large string of characters corresponding to the input phrase.
+
+Any character that doesn't exist in the alphabet will be replaced with a question mark.
+
+##### Example
+
 ```c#
-foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large))
-    Console.WriteLine(s);
+BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large)
 ```
 
-### Output
+##### Output
 
 ```
 ███    ███ ████████ ███       ███        ▄██████▄         ███         ███  ▄██████▄  ████████▄   ███       ████████▄
@@ -29,12 +35,14 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont
 
 #### Medium Block
 
+##### Example
+
 ```c#
 foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Medium))
     Console.WriteLine(s);
 ```
 
-#### Output
+##### Output
 
 ```
 ██   ██ ██████ ██       ██       ▄██████▄      ██      ██ ▄██████▄ █████▄ ██       ██████▄
@@ -47,12 +55,14 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont
 
 #### Small Block
 
+##### Example
+
 ```c#
 foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Small))
     Console.WriteLine(s);
 ```
 
-#### Output
+##### Output
 
 ```
 ██  ██ █████ ██     ██     ▄█████▄    ██     ██ ▄█████▄ █████▄ ██     █████▄
@@ -63,12 +73,14 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont
 
 #### Large Graffiti
 
+##### Example
+
 ```c#
 foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Large))
     Console.WriteLine(s);
 ```
 
-#### Output
+##### Output
 
 ```
    ▄█    █▄       ▄████████  ▄█        ▄█        ▄██████▄          ▄█     █▄   ▄██████▄     ▄████████  ▄█       ████████▄
@@ -83,12 +95,14 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigF
 
 #### Medium Graffiti
 
+##### Example
+
 ```c#
 foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Medium))
     Console.WriteLine(s);
 ```
 
-#### Output
+##### Output
 
 ```
   ██   █       ▄█████  █        █        ██████        █     █   ██████     █████  █       ██████▄
@@ -101,12 +115,14 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigF
 
 #### Small Graffiti
 
+##### Example
+
 ```c#
 foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Small))
     Console.WriteLine(s);
 ```
 
-### Output
+##### Output
 
 ```
  ██  █    ▄████   █      █      █████      █   █   █████    █████  █     █████▄
