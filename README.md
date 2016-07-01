@@ -1,8 +1,12 @@
 # BigFont
 A C# class for transforming strings into large, stylized characters.
 
-### Why?
+## Why?
 For fun, and because I needed something that would improve readability of big log files by adding something that would stick out when scrolling through them.
+
+## BigFont.BigFont
+
+The ```BigFont``` class is the only type within the namespace. 
 
 ### Methods
 
