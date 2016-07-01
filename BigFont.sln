@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont", "BigFont\BigFont.csproj", "{14F214E3-9F68-4BE8-B81C-60DAAB4DA6DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Examples.csproj", "{FAA8AD79-7136-460A-B79B-4803E09EBD0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14F214E3-9F68-4BE8-B81C-60DAAB4DA6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F214E3-9F68-4BE8-B81C-60DAAB4DA6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F214E3-9F68-4BE8-B81C-60DAAB4DA6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F214E3-9F68-4BE8-B81C-60DAAB4DA6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA8AD79-7136-460A-B79B-4803E09EBD0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA8AD79-7136-460A-B79B-4803E09EBD0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA8AD79-7136-460A-B79B-4803E09EBD0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA8AD79-7136-460A-B79B-4803E09EBD0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

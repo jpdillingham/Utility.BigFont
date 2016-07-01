@@ -51,7 +51,7 @@ namespace BigFont
     /// <summary>
     /// BigFont transforms strings into large, stylized characters.
     /// </summary>
-    static class BigFont
+    public static class BigFont
     {
         #region Enumerations
 
