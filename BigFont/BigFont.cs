@@ -47,7 +47,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Symbiote.Core
+namespace BigFont
 {
     /// <summary>
     /// BigFont transforms strings into large, stylized characters.
