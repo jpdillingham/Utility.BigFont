@@ -1,6 +1,7 @@
 # BigFont
 
 [![Build status](https://ci.appveyor.com/api/projects/status/lpomyooh5j4vuwio?svg=true)](https://ci.appveyor.com/project/jpdillingham/bigfont)
+[![NuGet version](https://badge.fury.io/nu/BigFont.svg)](https://badge.fury.io/nu/BigFont)
 
 A C# class for transforming strings into large, stylized characters.
 
