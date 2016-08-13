@@ -1,8 +1,17 @@
 # BigFont
+
+[![Build status](https://ci.appveyor.com/api/projects/status/lpomyooh5j4vuwio?svg=true)](https://ci.appveyor.com/project/jpdillingham/bigfont)
+
 A C# class for transforming strings into large, stylized characters.
 
 ## Why?
 For fun, and because I needed something that would improve readability of big log files by adding something that would stick out when scrolling through them.
+
+## Installation 
+
+Install from the NuGet gallery GUI or with the Package Manager Console using the following command:
+
+```Install-Package BigFont```
 
 ## BigFont.BigFont
 
