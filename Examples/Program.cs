@@ -1,37 +1,37 @@
 ﻿using System;
 
-namespace BigFont.Examples
+namespace Utility.BigFont.Examples
 {
     class Program
     {
         static void Main(string[] args)
         {
-            foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large))
+            foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large))
                 Console.WriteLine(s);
 
             Console.WriteLine("\n");
 
-            foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Medium))
+            foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Medium))
                 Console.WriteLine(s);
 
             Console.WriteLine("\n");
 
-            foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Small))
+            foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Small))
                 Console.WriteLine(s);
 
             Console.WriteLine("\n");
 
-            foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Large))
+            foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Large))
                 Console.WriteLine(s);
 
             Console.WriteLine("\n");
 
-            foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Medium))
+            foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Medium))
                 Console.WriteLine(s);
 
             Console.WriteLine("\n");
 
-            foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Small))
+            foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Small))
                 Console.WriteLine(s);
 
             Console.WriteLine("\n");

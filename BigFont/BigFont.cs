@@ -47,12 +47,59 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace BigFont
+namespace Utility.BigFont
 {
+    /// <summary>
+    /// Font type enumeration
+    /// </summary>
+    public enum Font
+    {
+        /// <summary>
+        /// Default font; DefaultFont property will be substituted when used.
+        /// </summary>
+        Default,
+
+        /// <summary>
+        /// Block font.
+        /// </summary>
+        Block,
+
+        /// <summary>
+        /// Graffiti font.
+        /// </summary>
+        Graffiti
+    }
+
+    /// <summary>
+    /// Font size enumeration; the integer value indicates the height in lines
+    /// </summary>
+    public enum FontSize
+    {
+        /// <summary>
+        /// Default size; DefaultFontSize property will be substituted when used.
+        /// </summary>
+        Default,
+
+        /// <summary>
+        /// Large font size (8 lines).
+        /// </summary>
+        Large = 8,
+
+        /// <summary>
+        /// Medium font size (6 lines).
+        /// </summary>
+        Medium = 6,
+
+        /// <summary>
+        /// Small font size (4 lines).
+        /// </summary>
+        Small = 4
+    }
+
     /// <summary>
     /// BigFont transforms strings into large, stylized characters.
     /// </summary>
-    public static class BigFont
+    public static class BigFontGenerator
     {
         #region Fields
 
@@ -71,12 +118,12 @@ namespace BigFont
         #region Constructors
 
         /// <summary>
-        /// Initializes static members of the <see cref="BigFont"/> class.
+        /// Initializes static members of the <see cref="BigFontGenerator"/> class.
         /// </summary>
         [SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1116:SplitParametersMustStartOnLineAfterDeclaration", Justification = "Reviewed.")]
         [SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1118:ParameterMustNotSpanMultipleLines", Justification = "Reviewed.")]
         [SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1115:ParameterMustFollowComma", Justification = "Reviewed.")]
-        static BigFont()
+        static BigFontGenerator()
         {
             // initialize the default properties
             CurrentFont = DefaultFont;
@@ -3415,57 +3462,6 @@ namespace BigFont
                 "  ██▀  ",
                 "  ▄▄   "
             });
-        }
-
-        #endregion
-
-        #region Enumerations
-
-        /// <summary>
-        /// Font type enumeration
-        /// </summary>
-        public enum Font
-        {
-            /// <summary>
-            /// Default font; DefaultFont property will be substituted when used.
-            /// </summary>
-            Default,
-
-            /// <summary>
-            /// Block font.
-            /// </summary>
-            Block,
-
-            /// <summary>
-            /// Graffiti font.
-            /// </summary>
-            Graffiti
-        }
-
-        /// <summary>
-        /// Font size enumeration; the integer value indicates the height in lines
-        /// </summary>
-        public enum FontSize
-        {
-            /// <summary>
-            /// Default size; DefaultFontSize property will be substituted when used.
-            /// </summary>
-            Default,
-
-            /// <summary>
-            /// Large font size (8 lines).
-            /// </summary>
-            Large = 8,
-
-            /// <summary>
-            /// Medium font size (6 lines).
-            /// </summary>
-            Medium = 6,
-
-            /// <summary>
-            /// Small font size (4 lines).
-            /// </summary>
-            Small = 4
         }
 
         #endregion
