@@ -54,9 +54,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BigFont\BigFont.csproj">
+    <ProjectReference Include="..\Utility.BigFont\Utility.BigFont.csproj">
       <Project>{14f214e3-9f68-4be8-b81c-60daab4da6df}</Project>
-      <Name>BigFont</Name>
+      <Name>Utility.BigFont</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
