@@ -1,6 +1,7 @@
 # BigFont
 
-[![Build status](https://ci.appveyor.com/api/projects/status/lpomyooh5j4vuwio?svg=true)](https://ci.appveyor.com/project/jpdillingham/bigfont)
+[![Build status](https://ci.appveyor.com/api/projects/status/6calauwc19uf1ygo?svg=true)](https://ci.appveyor.com/project/jpdillingham/utility-bigfont)
+[![Dependency Status](https://www.versioneye.com/user/projects/5830950f84f2610038f3d06f/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5830950f84f2610038f3d06f)
 [![NuGet version](https://img.shields.io/nuget/v/Utility.BigFont.svg)](https://www.nuget.org/packages/Utility.BigFont/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/jpdillingham/Utility.BigFont/blob/master/LICENSE)
 

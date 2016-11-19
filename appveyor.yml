@@ -2,10 +2,10 @@ version: 2.0.0.{build}
 before_build:
 - cmd: nuget restore
 build:
-  project: BigFont.sln
+  project: Utility.BigFont.sln
   verbosity: minimal
 test_script:
-- .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"C:\projects\Utility.BigFont\BigFont.Tests\bin\Debug\Utility.BigFont.Tests.dll -noshadow -appveyor" -returntargetcode -filter:"+[Utility.BigFont*]*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\Utility.BigFont_coverage.xml
+- .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"C:\projects\Utility.BigFont\Utility.BigFont.Tests\bin\Debug\Utility.BigFont.Tests.dll -noshadow -appveyor" -returntargetcode -filter:"+[Utility.BigFont*]*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\Utility.BigFont_coverage.xml
 - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
 - pip install codecov
 - codecov -f "Utility.BigFont_coverage.xml"
