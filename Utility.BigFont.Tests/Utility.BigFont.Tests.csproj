@@ -7,8 +7,8 @@
     <ProjectGuid>{2B28134F-C3CD-4AD9-93D9-E2619E22F8D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BigFont.Tests</RootNamespace>
-    <AssemblyName>BigFont.Tests</AssemblyName>
+    <RootNamespace>Utility.BigFont.Tests</RootNamespace>
+    <AssemblyName>Utility.BigFont.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
