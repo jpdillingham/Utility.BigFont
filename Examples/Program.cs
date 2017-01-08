@@ -44,6 +44,11 @@ namespace Utility.BigFont.Examples
             foreach (string s in BigFontGenerator.GenerateCaseSensitive("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Medium))
                 Console.WriteLine(s);
 
+            Console.WriteLine("\n");
+
+            foreach (string s in BigFontGenerator.GenerateCaseSensitive("Hello World! 0123", BigFont.Font.Graffiti, BigFont.FontSize.Medium))
+                Console.WriteLine(s);
+
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }

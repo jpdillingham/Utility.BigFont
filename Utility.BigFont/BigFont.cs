@@ -3548,7 +3548,7 @@ namespace Utility.BigFont
             {
                 string[] letter;
 
-                if (char.IsUpper(c))
+                if (char.IsUpper(c) || char.IsDigit(c) || char.IsPunctuation(c))
                 {
                     letter = Generate(c.ToString(), font, size);
                 }
