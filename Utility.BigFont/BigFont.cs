@@ -1,48 +1,49 @@
 /*
-      █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀  ▀  ▀      ▀▀ 
-      █   
-      █   ▀█████████▄                    ▄████████                            
-      █     ███    ███                  ███    ███                            
-      █     ███    ███  █     ▄████▄    ███    █▀   ██████  ██▄▄▄▄      ██    
-      █    ▄███▄▄▄██▀  ██    ██    ▀   ▄███▄▄▄     ██    ██ ██▀▀▀█▄ ▀███████▄ 
-      █   ▀▀███▀▀▀██▄  ██▌  ▄██       ▀▀███▀▀▀     ██    ██ ██   ██     ██  ▀ 
-      █     ███    ██▄ ██  ▀▀██ ███▄    ███        ██    ██ ██   ██     ██    
-      █     ███    ███ ██    ██    ██   ███        ██    ██ ██   ██     ██    
-      █   ▄█████████▀  █     ██████▀    ███         ██████   █   █     ▄██▀   
+      █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀  ▀  ▀      ▀▀
       █
- ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄  ▄▄ ▄▄   ▄▄▄▄ ▄▄     ▄▄     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄ ▄ 
- █████████████████████████████████████████████████████████████ ███████████████ ██  ██ ██   ████ ██     ██     ████████████████ █ █ 
-      ▄  
+      █   ▀█████████▄                    ▄████████
+      █     ███    ███                  ███    ███
+      █     ███    ███  █     ▄████▄    ███    █▀   ██████  ██▄▄▄▄      ██
+      █    ▄███▄▄▄██▀  ██    ██    ▀   ▄███▄▄▄     ██    ██ ██▀▀▀█▄ ▀███████▄
+      █   ▀▀███▀▀▀██▄  ██▌  ▄██       ▀▀███▀▀▀     ██    ██ ██   ██     ██  ▀
+      █     ███    ██▄ ██  ▀▀██ ███▄    ███        ██    ██ ██   ██     ██
+      █     ███    ███ ██    ██    ██   ███        ██    ██ ██   ██     ██
+      █   ▄█████████▀  █     ██████▀    ███         ██████   █   █     ▄██▀
+      █
+ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄  ▄▄ ▄▄   ▄▄▄▄ ▄▄     ▄▄     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄ ▄
+ █████████████████████████████████████████████████████████████ ███████████████ ██  ██ ██   ████ ██     ██     ████████████████ █ █
+      ▄
       █  BigFont transforms strings into large, stylized characters.
-      █  
-      █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀ ▀ ▀▀▀     ▀▀               ▀   
+      █
+      █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀ ▀ ▀▀▀     ▀▀               ▀
       █  The MIT License (MIT)
-      █  
+      █
       █  Copyright (c) 2016 JP Dillingham (jp@dillingham.ws)
-      █  
+      █
       █  Permission is hereby granted, free of charge, to any person obtaining a copy
       █  of this software and associated documentation files (the "Software"), to deal
       █  in the Software without restriction, including without limitation the rights
       █  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
       █  copies of the Software, and to permit persons to whom the Software is
       █  furnished to do so, subject to the following conditions:
-      █  
+      █
       █  The above copyright notice and this permission notice shall be included in all
       █  copies or substantial portions of the Software.
-      █  
+      █
       █  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
       █  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
       █  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
       █  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
       █  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
       █  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-      █  SOFTWARE. 
+      █  SOFTWARE.
       █
-      ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀  ▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀██ 
-                                                                                                   ██   
-                                                                                               ▀█▄ ██ ▄█▀                       
-                                                                                                 ▀████▀   
+      ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀  ▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀██
+                                                                                                   ██
+                                                                                               ▀█▄ ██ ▄█▀
+                                                                                                 ▀████▀
                                                                                                    ▀▀                               */
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -50,75 +51,75 @@ using System.Diagnostics.CodeAnalysis;
 namespace Utility.BigFont
 {
     /// <summary>
-    /// Font type enumeration
+    ///     Font type enumeration
     /// </summary>
     public enum Font
     {
         /// <summary>
-        /// Default font; DefaultFont property will be substituted when used.
+        ///     Default font; DefaultFont property will be substituted when used.
         /// </summary>
         Default,
 
         /// <summary>
-        /// Block font.
+        ///     Block font.
         /// </summary>
         Block,
 
         /// <summary>
-        /// Graffiti font.
+        ///     Graffiti font.
         /// </summary>
         Graffiti
     }
 
     /// <summary>
-    /// Font size enumeration; the integer value indicates the height in lines
+    ///     Font size enumeration; the integer value indicates the height in lines
     /// </summary>
     public enum FontSize
     {
         /// <summary>
-        /// Default size; DefaultFontSize property will be substituted when used.
+        ///     Default size; DefaultFontSize property will be substituted when used.
         /// </summary>
         Default,
 
         /// <summary>
-        /// Large font size (8 lines).
+        ///     Large font size (8 lines).
         /// </summary>
         Large = 8,
 
         /// <summary>
-        /// Medium font size (6 lines).
+        ///     Medium font size (6 lines).
         /// </summary>
         Medium = 6,
 
         /// <summary>
-        /// Small font size (4 lines).
+        ///     Small font size (4 lines).
         /// </summary>
         Small = 4
     }
 
     /// <summary>
-    /// BigFont transforms strings into large, stylized characters.
+    ///     BigFont transforms strings into large, stylized characters.
     /// </summary>
     public static class BigFontGenerator
     {
-        #region Fields
+        #region Private Fields
 
         /// <summary>
-        /// The default font used to initialize the DefaultFont property.
+        ///     The default font used to initialize the DefaultFont property.
         /// </summary>
         private const Font DefaultFont = Font.Block;
 
         /// <summary>
-        /// The default font size used to initialize the DefaultFontSize property.
+        ///     The default font size used to initialize the DefaultFontSize property.
         /// </summary>
         private const FontSize DefaultFontSize = FontSize.Large;
 
-        #endregion
+        #endregion Private Fields
 
-        #region Constructors
+        #region Public Constructors
 
         /// <summary>
-        /// Initializes static members of the <see cref="BigFontGenerator"/> class.
+        ///     Initializes static members of the <see cref="BigFontGenerator"/> class.
         /// </summary>
         [SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1116:SplitParametersMustStartOnLineAfterDeclaration", Justification = "Reviewed.")]
         [SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1118:ParameterMustNotSpanMultipleLines", Justification = "Reviewed.")]
@@ -133,7 +134,7 @@ namespace Utility.BigFont
             Alphabet = new Dictionary<Tuple<char, Font, FontSize>, string[]>();
 
             /*
-            █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀  ▀  ▀      ▀▀ 
+            █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀  ▀  ▀      ▀▀
             █
             █  ████████▄  ███        ▄██████▄   ▄██████▄  ███    ▄██▀
             █  ███    ███ ███       ███    ███ ███    ███ ███  ▄██▀
@@ -1798,8 +1799,8 @@ namespace Utility.BigFont
             });
 
             /*
-            █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀  ▀  ▀      ▀▀ 
-            █  
+            █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀  ▀  ▀      ▀▀
+            █
             █      ▄██████▄     ▄████████   ▄████████     ▄████████    ▄████████  ▄█      ███      ▄█
             █     ███    ███   ███    ███   ███    ███   ███    ███   ███    ███ ███  ▀█████████▄ ███
             █     ███    █▀   ▄███▄▄▄▄██▀   ███    ███   ███    █▀    ███    █▀  ███▌    ▀███▀▀██ ███▌
@@ -3464,37 +3465,33 @@ namespace Utility.BigFont
             });
         }
 
-        #endregion
+        #endregion Public Constructors
 
-        #region Properties
+        #region Public Properties
 
         /// <summary>
-        /// Gets or sets the current font.
+        ///     Gets the alphabet.
+        /// </summary>
+        public static Dictionary<Tuple<char, Font, FontSize>, string[]> Alphabet { get; private set; }
+
+        /// <summary>
+        ///     Gets or sets the current font.
         /// </summary>
         public static Font CurrentFont { get; set; }
 
         /// <summary>
-        /// Gets or sets the current font size.
+        ///     Gets or sets the current font size.
         /// </summary>
         public static FontSize CurrentFontSize { get; set; }
 
-        /// <summary>
-        /// Gets the alphabet.
-        /// </summary>
-        public static Dictionary<Tuple<char, Font, FontSize>, string[]> Alphabet { get; private set; }
+        #endregion Public Properties
 
-        #endregion
-
-        #region Methods
-
-        #region Static Methods
+        #region Public Methods
 
         /// <summary>
-        /// Generates a large string of characters corresponding to the input phrase.
+        ///     Generates a large string of characters corresponding to the input phrase.
         /// </summary>
-        /// <remarks>
-        /// Any character that doesn't exist in the alphabet will be replaced with a question mark.
-        /// </remarks>
+        /// <remarks>Any character that doesn't exist in the alphabet will be replaced with a question mark.</remarks>
         /// <param name="phrase">The phrase to generate.</param>
         /// <param name="size">The size of the font to use.</param>
         /// <returns>A string array containing the generated output.</returns>
@@ -3505,11 +3502,9 @@ namespace Utility.BigFont
         }
 
         /// <summary>
-        /// Generates a large string of characters corresponding to the input phrase.
+        ///     Generates a large string of characters corresponding to the input phrase.
         /// </summary>
-        /// <remarks>
-        /// Any character that doesn't exist in the alphabet will be replaced with a question mark.
-        /// </remarks>
+        /// <remarks>Any character that doesn't exist in the alphabet will be replaced with a question mark.</remarks>
         /// <param name="phrase">The phrase to generate.</param>
         /// <param name="font">The Font type to use.</param>
         /// <param name="size">The size of the font to use.</param>
@@ -3535,8 +3530,104 @@ namespace Utility.BigFont
             return r;
         }
 
-        #endregion
+        /// <summary>
+        ///     Generates a large string of characters corresponding to the input phrase while simulating upper and lower case
+        ///     characters by reducing the specified font size by one size, if the specified size is not <see cref="FontSize.Small"/>.
+        /// </summary>
+        /// <param name="phrase">The phrase to generate.</param>
+        /// <param name="font">The Font type to use.</param>
+        /// <param name="size">The size of the font to use.</param>
+        /// <returns>A string array containing the generated output.</returns>
+        public static string[] GenerateCaseSensitive(string phrase, Font font = Font.Default, FontSize size = FontSize.Default)
+        {
+            int maxHeight = GetHeightOf(font, size);
+            FontSize lowercaseSize = GetLowerCaseFontSizeOf(size);
+            string[] output = new string[maxHeight];
 
-        #endregion
+            foreach (char c in phrase)
+            {
+                string[] letter;
+
+                if (char.IsUpper(c))
+                {
+                    letter = Generate(c.ToString(), font, size);
+                }
+                else
+                {
+                    letter = Generate(c.ToString(), font, lowercaseSize);
+                }
+
+                // if the current letter is lowercase, pad the top lines of the output array with blanks equal to the width of the character
+                int heightDifference = maxHeight - letter.Length;
+                string pad = new string(' ', letter[0].Length);
+
+                for (int i = 0; i < heightDifference; i++)
+                {
+                    output[i] += pad;
+                }
+
+                // append the rest of the new letter to the output array
+                for (int i = heightDifference; i < output.Length; i++)
+                {
+                    output[i] += letter[i - heightDifference];
+                }
+            }
+
+            return output;
+        }
+
+        /// <summary>
+        ///     Returns the height, in lines, of the characters of the specified <see cref="Font"/> and <see cref="FontSize"/>.
+        /// </summary>
+        /// <param name="font">The Font for which the height is to be returned.</param>
+        /// <param name="size">The FontSize for which the height is to be returned.</param>
+        /// <returns>The height, in lines, of the characters of the specified Font and FontSize.</returns>
+        public static int GetHeightOf(Font font, FontSize size)
+        {
+            if (size == FontSize.Default)
+            {
+                size = DefaultFontSize;
+            }
+
+            if (font == Font.Default)
+            {
+                font = DefaultFont;
+            }
+
+            return Alphabet[new Tuple<char, Font, FontSize>('A', font, size)].Length;
+        }
+
+        #endregion Public Methods
+
+        #region Private Methods
+
+        /// <summary>
+        ///     Returns the <see cref="FontSize"/> corresponding to one size lower than the specified size. If
+        ///     <see cref="FontSize.Small"/> is specified, it is returned as there is no smaller size.
+        /// </summary>
+        /// <param name="size">The size for which the smaller size is to be returned.</param>
+        /// <returns>The FontSize corresponding to one size lower than the specified size.</returns>
+        private static FontSize GetLowerCaseFontSizeOf(FontSize size)
+        {
+            if (size == FontSize.Default)
+            {
+                size = DefaultFontSize;
+            }
+
+            if (size == FontSize.Large)
+            {
+                return FontSize.Medium;
+            }
+            else if (size == FontSize.Medium)
+            {
+                return FontSize.Small;
+            }
+            else
+            {
+                return size;
+            }
+        }
+
+        #endregion Private Methods
     }
 }

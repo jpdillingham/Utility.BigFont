@@ -2,9 +2,9 @@
 
 namespace Utility.BigFont.Examples
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large))
                 Console.WriteLine(s);
@@ -35,6 +35,14 @@ namespace Utility.BigFont.Examples
                 Console.WriteLine(s);
 
             Console.WriteLine("\n");
+
+            foreach (string s in BigFontGenerator.GenerateCaseSensitive("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Large))
+                Console.WriteLine(s);
+
+            Console.WriteLine("\n");
+
+            foreach (string s in BigFontGenerator.GenerateCaseSensitive("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Medium))
+                Console.WriteLine(s);
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();

@@ -31,7 +31,7 @@ Any character that doesn't exist in the alphabet will be replaced with a questio
 ##### Example
 
 ```c#
-BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large)
+BigFontGenerator.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large)
 ```
 
 ##### Output
@@ -47,6 +47,24 @@ BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large)
 ███    ███ ████████ █████████ █████████  ▀██████▀         █████▀   ▀█████  ▀██████▀  ███    ▀██▄ █████████ ████████▀
 ```
 
+```c#
+BigFontGenerator.GenerateCaseSensitive("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Large)
+```
+
+##### Output
+
+```
+   ▄█    █▄                                               ▄█     █▄
+  ███    ███                                             ███     ███
+  ███    ███      ▄█████  █        █        ██████       ███     ███  ██████     █████  █       ██████▄
+ ▄███▄▄▄▄███▄▄   ██   █  ██       ██       ██    ██      ███     ███ ██    ██   ██  ██ ██       ██   ▀██
+▀▀███▀▀▀▀███▀   ▄██▄▄    ██       ██       ██    ██      ███     ███ ██    ██  ▄██▄▄█▀ ██       ██    ██
+  ███    ███   ▀▀██▀▀    ██       ██       ██    ██      ███     ███ ██    ██ ▀███████ ██       ██    ██
+  ███    ███     ██   █  ██▌    ▄ ██▌    ▄ ██    ██      ███ ▄█▄ ███ ██    ██   ██  ██ ██▌    ▄ ██   ▄██
+  ███    █▀      ███████ ████▄▄██ ████▄▄██  ██████        ▀███▀███▀   ██████    ██  ██ ████▄▄██ ██████▀
+```
+
+
 ### Other Sizes and Fonts
 
 #### Medium Block
@@ -54,7 +72,7 @@ BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Large)
 ##### Example
 
 ```c#
-foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Medium))
+foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Medium))
     Console.WriteLine(s);
 ```
 
@@ -74,7 +92,7 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont
 ##### Example
 
 ```c#
-foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Small))
+foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Block, BigFont.FontSize.Small))
     Console.WriteLine(s);
 ```
 
@@ -92,7 +110,7 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Block, BigFont
 ##### Example
 
 ```c#
-foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Large))
+foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Large))
     Console.WriteLine(s);
 ```
 
@@ -114,7 +132,7 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigF
 ##### Example
 
 ```c#
-foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Medium))
+foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Medium))
     Console.WriteLine(s);
 ```
 
@@ -134,7 +152,7 @@ foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigF
 ##### Example
 
 ```c#
-foreach (string s in BigFont.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Small))
+foreach (string s in BigFontGenerator.Generate("Hello World", BigFont.Font.Graffiti, BigFont.FontSize.Small))
     Console.WriteLine(s);
 ```
 
