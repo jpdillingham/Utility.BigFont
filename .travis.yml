@@ -1,0 +1,10 @@
+os:
+  - linux
+  - osx
+language: csharp
+solution: Utility.BigFont.sln
+install:
+  - nuget restore Utility.BigFont.sln
+script:
+  - xbuild /p:Configuration=Release Utility.BigFont.sln
+  - mono ./packages/xunit.runner.console.2.1.0/tools/xunit.console.exe ./Utility.BigFont.Tests/bin/Release/Utility.BigFont.Tests.dll
