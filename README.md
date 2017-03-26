@@ -6,7 +6,7 @@
 [![NuGet version](https://img.shields.io/nuget/v/Utility.BigFont.svg)](https://www.nuget.org/packages/Utility.BigFont/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/jpdillingham/Utility.BigFont/blob/master/LICENSE)
 
-A C# class for transforming strings into large, stylized characters.
+A C# Class Library for transforming strings into large, stylized characters.
 
 ## Why?
 For fun, and because I needed something that would improve readability of big log files by adding something that would stick out when scrolling through them.
