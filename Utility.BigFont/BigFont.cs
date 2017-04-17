@@ -712,6 +712,18 @@ namespace Utility.BigFont
                 "       ▀█▄ "
             });
 
+            Alphabet.Add(new Tuple<char, Font, FontSize>('-', Font.Block, FontSize.Large), new string[]
+            {
+                "      ",
+                "      ",
+                "      ",
+                " ▄▄▄▄ ",
+                " ▀▀▀▀ ",
+                "      ",
+                "      ",
+                "      "
+            });
+
             Alphabet.Add(new Tuple<char, Font, FontSize>('.', Font.Block, FontSize.Large), new string[]
             {
                 "    ",
@@ -1278,6 +1290,16 @@ namespace Utility.BigFont
                 "     ▀█▄ "
             });
 
+            Alphabet.Add(new Tuple<char, Font, FontSize>('-', Font.Block, FontSize.Medium), new string[]
+            {
+                "     ",
+                "     ",
+                " ▄▄▄ ",
+                " ▀▀▀ ",
+                "     ",
+                "     "
+            });
+
             Alphabet.Add(new Tuple<char, Font, FontSize>('.', Font.Block, FontSize.Medium), new string[]
             {
                 "   ",
@@ -1732,6 +1754,14 @@ namespace Utility.BigFont
                 " ▀▄   ",
                 "  ▀▄  ",
                 "   ▀▄ "
+            });
+
+            Alphabet.Add(new Tuple<char, Font, FontSize>('-', Font.Block, FontSize.Small), new string[]
+            {
+                "    ",
+                " ▄▄ ",
+                " ▀▀ ",
+                "    "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('.', Font.Block, FontSize.Small), new string[]
@@ -2378,6 +2408,18 @@ namespace Utility.BigFont
                 "       ▀█▄ "
             });
 
+            Alphabet.Add(new Tuple<char, Font, FontSize>('-', Font.Graffiti, FontSize.Large), new string[]
+            {
+                "      ",
+                "      ",
+                "      ",
+                " ▄▄▄▄ ",
+                " ▀▀▀▀ ",
+                "      ",
+                "      ",
+                "      "
+            });
+
             Alphabet.Add(new Tuple<char, Font, FontSize>('.', Font.Graffiti, FontSize.Large), new string[]
             {
                 "    ",
@@ -2944,6 +2986,16 @@ namespace Utility.BigFont
                 "     ▀█▄ "
             });
 
+            Alphabet.Add(new Tuple<char, Font, FontSize>('-', Font.Graffiti, FontSize.Medium), new string[]
+            {
+                "     ",
+                "     ",
+                " ▄▄▄ ",
+                " ▀▀▀ ",
+                "     ",
+                "     "
+            });
+
             Alphabet.Add(new Tuple<char, Font, FontSize>('.', Font.Graffiti, FontSize.Medium), new string[]
             {
                 "   ",
@@ -3398,6 +3450,14 @@ namespace Utility.BigFont
                 " ▀▄   ",
                 "  ▀▄  ",
                 "   ▀▄ "
+            });
+
+            Alphabet.Add(new Tuple<char, Font, FontSize>('-', Font.Graffiti, FontSize.Small), new string[]
+            {
+                "    ",
+                " ▄▄ ",
+                " ▀▀ ",
+                "    "
             });
 
             Alphabet.Add(new Tuple<char, Font, FontSize>('.', Font.Graffiti, FontSize.Small), new string[]
